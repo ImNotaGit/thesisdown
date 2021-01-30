@@ -3,23 +3,25 @@ Title: An updated R Markdown thesis template using the bookdown package
 Version: 0.1.0
 Authors@R: c(
     person("Chester", "Ismay", email = "chester.ismay@gmail.com", role = c("cre", "aut")),
-    person("Nick", "Solomon", email = "nick@nicksolomon.me", role = "aut"))
-Description: Using the bookdown package and LaTeX and Word thesis templates from
-    Reed College, this package aims to encourage reproducible research using
-    simple Markdown syntax while embedding all of the R code to produce plots
+    person("Nick", "Solomon", email = "nick@nicksolomon.me", role = "aut"),
+    person("Kuoyuan", "Cheng", role="aut"))
+Description: Based on ismayc/thesisdown. Using the bookdown package and
+    LaTeX thesis template from University of Maryland, College Park,
+    this package aims to encourage reproducible research using simple
+    Markdown syntax while embedding all of the R code to produce plots
     and analyses as well.
-Maintainer: Chester Ismay <chester.ismay@gmail.com>
+Maintainer: Kuoyuan Cheng <yourself@somewhere.net>
 Depends:
     R (>= 3.2.0)
-Imports: 
-    dplyr,
-    ggplot2,
+Imports:
     bookdown,
     knitr,
     here
 Suggests:
     remotes,
-    usethis
+    usethis,
+    dplyr,
+    ggplot2,
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

@@ -1,0 +1,12 @@
+# Glossary {-}
+
+<!--
+If you feel it necessary to include a glossary, it goes here. otherwise remove this file.
+-->
+
+\noindent {\bf Term A} \newline
+\indent This is the definition of Term A.
+
+\noindent {\bf Term B} \newline
+\indent This is a long definition of Term B. This is a long definition of Term B. This is a long definition of Term B. This is a long definition of Term B. This is a long definition of Term B.
+

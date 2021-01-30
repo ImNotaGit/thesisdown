@@ -1,5 +1,9 @@
 # thesisdown <img src="man/figures/thesisdown_hex.png" align="right" width=200 />
 
+This is a fork of ismayc/thesisdown, adapted for the thesis format of [University of Maryland, College Park](https://gradschool.umd.edu/students/academic-progress/thesis-and-dissertation-filing) based on a LaTeX template provided by [Dr. Dorothea F. Brosius](https://terpconnect.umd.edu/~dbrosius/LatexThesisTemplate/).
+
+Below is the original readme document of ismayc/thesisdown.
+
 This project was inspired by the [bookdown](https://github.com/rstudio/bookdown) package and is an updated version of my Senior Thesis template in the `reedtemplates` package [here](https://github.com/ismayc/reedtemplates). It was originally designed to only work with the Reed College LaTeX template, but has since been adapted to work with many different institutions by many different individuals. Check out the [**Customizing thesisdown to your institution**](https://github.com/ismayc/thesisdown#customizing-thesisdown-to-your-institution) section below for examples.
 
 Currently, the PDF and gitbook versions are fully-functional.  The word and epub versions are developmental, have no templates behind them, and are essentially calls to the appropriate functions in bookdown.
@@ -95,7 +99,7 @@ Note that you may need to restart RStudio at this point for the following dialog
 
   ![New R Markdown](images/thesis_rmd.png)
 
-  Note that this will currently only **Knit** if you name the directory `index` as shown above. This guarantees that `index.html` is generated correctly for the Gitbook version of the thesis.
+  Note that this will currently only **Knit** if you name the directory `index` as shown above. This guarantees that `index.html` is generated correctly for the Gitbook version of the thesis. [Added by ImNotaGit: or you can use another folder name, but then need to rename the `<folder name>.Rmd` file within the created folder to `index.Rmd`]
 
 4) After choosing which type of output you'd like in the YAML at the top of index.Rmd, **Knit** the `index.Rmd` file to get the book in PDF or HTML formats.
 

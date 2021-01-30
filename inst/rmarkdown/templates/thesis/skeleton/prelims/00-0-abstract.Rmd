@@ -1,0 +1,32 @@
+\hbox{\ }
+
+\renewcommand{\baselinestretch}{1}
+\small \normalsize
+
+\begin{center}
+\large{{ABSTRACT}}
+
+\vspace{3em}
+
+\end{center}
+\hspace{-.15in}
+\begin{tabular}{ll}
+Title of Dissertation:    & {\large  THIS IS THE TITLE}\\
+&                     {\large  OF YOUR DISSERTATION} \\
+&                     {\large  ALL LETTERS SHOULD BE CAPITALIZED} \\
+\ \\
+&                          {\large  Your name} \\
+&                           {\large Doctor of Philosophy, Year} \\
+\ \\
+Dissertation Directed by: & {\large  Professor X} \\
+&               {\large  Department of Y} \\
+\end{tabular}
+
+\vspace{3em}
+
+\renewcommand{\baselinestretch}{2}
+\large \normalsize
+
+Abstract text starts here. \par
+
+Another paragraph.

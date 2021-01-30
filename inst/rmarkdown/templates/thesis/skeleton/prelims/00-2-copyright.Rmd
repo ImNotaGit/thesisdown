@@ -1,0 +1,19 @@
+\thispagestyle{empty}
+\hbox{\ }
+
+\vfill
+\renewcommand{\baselinestretch}{1}
+\small\normalsize
+
+\vspace{.5in}
+
+\begin{center}
+\large{\copyright \hbox{ }Copyright by\\
+Your name
+\\
+Year}
+\end{center}
+
+\vfill
+
+\newpage 

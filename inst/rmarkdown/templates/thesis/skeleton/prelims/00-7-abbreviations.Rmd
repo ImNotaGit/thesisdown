@@ -1,0 +1,17 @@
+\renewcommand{\baselinestretch}{1}
+\small\normalsize
+\hbox{\ }
+
+\vspace{.5in}
+
+
+\begin{center}
+\large{List of Abbreviations}
+\end{center} 
+
+\vspace{3pt}
+
+\begin{tabular}{ll}
+UMD & University of Maryland \\
+NIH & National Institutes of Health
+\end{tabular}
