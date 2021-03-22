@@ -15,3 +15,9 @@
 UMD & University of Maryland \\
 NIH & National Institutes of Health
 \end{tabular}
+
+%or use longtable for a table spanning multiple pages:
+\begin{longtable}{ll}
+UMD & University of Maryland \\
+NIH & National Institutes of Health
+\end{longtable}

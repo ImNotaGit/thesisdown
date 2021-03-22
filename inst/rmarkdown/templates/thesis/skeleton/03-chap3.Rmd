@@ -64,9 +64,22 @@ if (!require(thesisdown)) {
     )
   }
 }
+if (!require(kableExtra)) {
+  if (params$`Install needed packages for {thesisdown}`) {
+    install.packages("kableExtra", repos = "https://cran.rstudio.com")
+  } else {
+    stop(
+      paste(
+        'You need to run install.packages("kableExtra")',
+        "first in the Console."
+      )
+    )
+  }
+}
 library(thesisdown)
 library(dplyr)
 library(ggplot2)
+library(kableExtra)
 library(knitr)
 flights <- read.csv("data/flights.csv", stringsAsFactors = FALSE)
 ```
@@ -95,6 +108,20 @@ Table: (\#tab:inher) Correlation of Inheritance Factors for Parents and Child
 
 We can also create a link to the table by doing the following: Table \@ref(tab:inher).  If you go back to [Loading and exploring data] and look at the `kable` table, we can create a reference to this max delays table too: Table \@ref(tab:maxdelays). The addition of the `(\#tab:inher)` option to the end of the table caption allows us to then make a reference to Table `\@ref(tab:label)`. Note that this reference could appear anywhere throughout the document after the table has appeared.  
 
+This is a `kable` table example below. Any loading and preparing of the table needs to be in separate blocks:
+
+```{r}
+kab <- head(flights)
+```
+
+```{r kable-example, results="asis"}
+knitr::kable(kab, format="latex",
+  caption = "An example kable",
+  #longtable = TRUE,
+  booktabs = TRUE
+) %>% kableExtra::kable_styling(latex_options="scale_down") # to rescale the table to fit the width of a page; cannot use with `longtable=TRUE`; see kableExtra::kable_styling for more options
+```
+
 <!-- We will next explore ways to create this label-ref link using figures. -->
 
 \clearpage
@@ -114,9 +141,9 @@ If you need a graphic or tabular material to be part of the text, you can just p
 -->
 
 
-In the **R** chunk below, we will load in a picture stored as `reed.jpg` in our main directory.  We then give it the caption of "Reed logo", the label of "reedlogo", and specify that this is a figure.  Make note of the different **R** chunk options that are given in the R Markdown file (not shown in the knitted document).
+In the **R** chunk below, we will load in a picture stored as `reed.jpg` in our main directory.  We then give it the caption of "Reed logo", the label of "reedlogo", and specify that this is a figure.  Make note of the different **R** chunk options that are given in the R Markdown file (not shown in the knitted document). Use outwidth to control how wide the figure should be relative the the width of the page.
 
-```{r reedlogo, fig.cap="Reed logo"}
+```{r reedlogo, out.width="80%", fig.cap="Reed logo"}
 include_graphics(path = "figure/reed.jpg")
 ```
 

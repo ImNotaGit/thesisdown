@@ -80,7 +80,22 @@
 %\usepackage[colorlinks=true,urlcolor=black,linkcolor=blue,citecolor=blue]{hyperref}
 \usepackage[hidelinks]{hyperref}
 
+\usepackage{pdflscape}
+
+%\usepackage{textalpha}
+% these are for Unicode characters in the bibliography, add as needed
+\DeclareUnicodeCharacter{3B1}{\ensuremath{\alpha}}
+\DeclareUnicodeCharacter{3B2}{\ensuremath{\beta}}
+\DeclareUnicodeCharacter{3B3}{\ensuremath{\gamma}}
+\DeclareUnicodeCharacter{3B6}{\ensuremath{\zeta}}
+\DeclareUnicodeCharacter{3BC}{\ensuremath{\mu}}
+
+\DeclareUnicodeCharacter{392}{\ensuremath{\beta}}
+\DeclareUnicodeCharacter{2212}{-}
+
 \usepackage{amsmath}
+\DeclareMathOperator*{\minimize}{minimize} % such that you can write \minimize_{x} in math equations to display "minimize" with x below it
+\DeclareMathOperator*{\maximize}{maximize} % similarly
 \usepackage{amssymb,amsthm}
 \usepackage{booktabs}
 \usepackage{chemarr} %% Useful for one reaction arrow, useless if you're not a chem major

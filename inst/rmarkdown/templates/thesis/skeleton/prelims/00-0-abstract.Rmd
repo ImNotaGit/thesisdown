@@ -29,4 +29,6 @@ Dissertation Directed by: & {\large  Professor X} \\
 
 Abstract text starts here. \par
 
-Another paragraph.
+Another paragraph. \textsuperscript{example superscript} \par
+
+The .Rmd docs in the prelims folder are included in the yaml header of the main file, they are actually .tex files and should follow latex syntax. Also they are incorporated as yaml header and thus special characters need to be escaped according to yaml syntax. Single quote: Inosine 5''-Monophosphate. Double quote: \"all models are wrong, some are useful.\"

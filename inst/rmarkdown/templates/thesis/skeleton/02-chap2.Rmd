@@ -20,6 +20,21 @@ $$\sum_{j=1}^n (\delta\theta_j)^2 \leq {{\beta_i^2}\over{\delta_i^2 + \rho_i^2}}
 \left[ 2\rho_i^2 + {\delta_i^2\beta_i^2\over{\delta_i^2 + \rho_i^2}} \right] \equiv \omega_i^2
 $$
 
+An example of left alignment with `&`:
+$$
+\begin{aligned}
+&\maximize_{\mathbf{v,y^+,y^-}} \bigg( \sum_{i\in R_H}(y^+_i+y^-_i) + \sum_{i\in R_L}y^+_i \bigg)  \\
+&\text{subject to:} \\
+&\mathbf{Sv = 0} \\
+&\mathbf{v^{lb} \le v \le v^{ub}} \\
+&v_i + y^+_i(v^{lb}_i - \epsilon_{hi}) \ge v^{lb}_i,\; \text{for } i\in R_H \\
+&v_i + y^-_i(v^{ub}_i + \epsilon_{hi}) \le v^{ub}_i,\; \text{for } i\in R_H \\
+&v_i + y^+_i(v^{lb}_i + \epsilon_{lo}) \ge v^{lb}_i,\; \text{for } i\in R_L \\
+&v_i + y^+_i(v^{ub}_i - \epsilon_{lo}) \le v^{ub}_i,\; \text{for } i\in R_L \\
+&y^+_i,\, y^-_i \in \{0,1\} \\
+\end{aligned}
+$$
+
 From Informational Dynamics, we have the following (Dave Braden):
 
 After _n_ such encounters the posterior density for $\theta$ is
